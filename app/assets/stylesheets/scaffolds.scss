@@ -12,7 +12,6 @@ p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  margin: 33px;
 }
 
 pre {
@@ -87,4 +86,18 @@ div {
 
 label {
   display: block;
+}
+
+.center{
+  margin: auto;
+}
+
+.button-action {
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #a72020;
+  color: white;
+  font-weight: 500;
 }

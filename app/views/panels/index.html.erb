@@ -1,17 +1,17 @@
 
-<div class="container">
+<div class="container" id="home">
   <h1>Les dernieres chartes</h1>
   <div class="row panels-list">
       <% @panels.each do |panel| %>
       <div class="col-sm-3 panel">
         <p class="title"><%= panel.title%></p>
         <div class="colors">
-          <div class="color-display" style="background-color:<%= panel.color1 %>;"></div>
-          <div class="color-display" style="background-color:<%= panel.color2 %>;"></div>
-          <div class="color-display" style="background-color:<%= panel.color3 %>;"></div>
-          <div class="color-display" style="background-color:<%= panel.color4 %>;"></div>
-          <div class="color-display" style="background-color:<%= panel.color5 %>;"></div>
-          <div class="color-display" style="background-color:<%= panel.color6 %>;"></div>
+          <div class="color-display" style="flex:6; background-color:<%= panel.color1 %>;"><%= panel.color1 %></div>
+          <div class="color-display" style="flex:5; background-color:<%= panel.color2 %>;"><%= panel.color2 %></div>
+          <div class="color-display" style="flex:4; background-color:<%= panel.color3 %>;"><%= panel.color3 %></div>
+          <div class="color-display" style="flex:3; background-color:<%= panel.color4 %>;"><%= panel.color4 %></div>
+          <div class="color-display" style="flex:2; background-color:<%= panel.color5 %>;"><%= panel.color5 %></div>
+          <div class="color-display" style="flex:1; background-color:<%= panel.color6 %>;"><%= panel.color6 %></div>
         </div>
         <p class="description"><%= panel.description %></p>
       </div>
@@ -19,4 +19,4 @@
   </div>
 </div>
 
-<%= link_to 'New Panel', new_panel_path %>
+<%= link_to 'New Panel', new_panel_path, class: "button-action center" %>

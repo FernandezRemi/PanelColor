@@ -9,16 +9,29 @@
     background-color: white;
     margin: 20px;
     .title {
+      text-align: center;
       text-transform: uppercase;
       color: #444;
       font-weight: regular;
       font-size: 1.1em;
-      padding: 20px;
-      .colors {
-        .color-display {
-          float: left;
-          width: 100%;
-          min-height: 20px;
+      padding-top: 20px;
+
+    }
+    .colors {
+      min-height: 100px;
+      max-width: 150px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      .color-display {
+        width: 100%;
+        min-height: 20px;
+        color: transparent;
+        transition: .3s;
+        text-align: center;
+        flex: 1;
+        &:hover {
+          color: white;
         }
       }
     }
