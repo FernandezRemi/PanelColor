@@ -1,0 +1,35 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 0;
+  background-color: #eaeaea;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  h1 {
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 1em;
+    img {
+      height: 30px;
+    }
+  }
+  nav {
+    display: inline-block;
+    a {
+      text-decoration: none;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    ul {
+      margin: 0;
+      li {
+        text-transform: uppercase;
+        display: inline-block;
+        color: #333;
+        padding: 0 20px;
+      }
+    }
+  }
+}

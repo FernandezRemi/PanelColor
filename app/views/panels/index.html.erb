@@ -1,0 +1,22 @@
+
+<div class="container">
+  <h1>Les dernieres chartes</h1>
+  <div class="row panels-list">
+      <% @panels.each do |panel| %>
+      <div class="col-sm-3 panel">
+        <p class="title"><%= panel.title%></p>
+        <div class="colors">
+          <div class="color-display" style="background-color:<%= panel.color1 %>;"></div>
+          <div class="color-display" style="background-color:<%= panel.color2 %>;"></div>
+          <div class="color-display" style="background-color:<%= panel.color3 %>;"></div>
+          <div class="color-display" style="background-color:<%= panel.color4 %>;"></div>
+          <div class="color-display" style="background-color:<%= panel.color5 %>;"></div>
+          <div class="color-display" style="background-color:<%= panel.color6 %>;"></div>
+        </div>
+        <p class="description"><%= panel.description %></p>
+      </div>
+      <% end %>
+  </div>
+</div>
+
+<%= link_to 'New Panel', new_panel_path %>

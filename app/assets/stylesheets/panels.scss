@@ -1,0 +1,26 @@
+// Place all the styles related to the Panels controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.panels-list {
+  background-color: #DDD;
+  .panel {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin: 20px;
+    .title {
+      text-transform: uppercase;
+      color: #444;
+      font-weight: regular;
+      font-size: 1.1em;
+      padding: 20px;
+      .colors {
+        .color-display {
+          float: left;
+          width: 100%;
+          min-height: 20px;
+        }
+      }
+    }
+  }
+}

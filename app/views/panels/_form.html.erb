@@ -1,0 +1,57 @@
+<%= form_for(panel) do |f| %>
+  <% if panel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(panel.errors.count, "error") %> prohibited this panel from being saved:</h2>
+
+      <ul>
+      <% panel.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :color1 %>
+    <%= f.color_field :color1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :color2 %>
+    <%= f.color_field :color2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :color3 %>
+    <%= f.color_field :color3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :color4 %>
+    <%= f.color_field :color4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :color5 %>
+    <%= f.color_field :color5 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :color6 %>
+    <%= f.color_field :color6 %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
