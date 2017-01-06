@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170105145407) do
+ActiveRecord::Schema.define(version: 20170106090318) do
 
   create_table "panels", force: :cascade do |t|
     t.string   "title"
@@ -21,8 +21,9 @@ ActiveRecord::Schema.define(version: 20170105145407) do
     t.string   "color4"
     t.string   "color5"
     t.string   "color6"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.integer  "colors_count", default: 4
   end
 
 end

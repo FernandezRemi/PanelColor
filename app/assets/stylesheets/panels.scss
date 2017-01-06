@@ -2,38 +2,89 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.panel {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  margin: 20px;
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #444;
+    font-weight: regular;
+    font-size: 1.1em;
+    padding-top: 20px;
+
+  }
+  .colors {
+    min-height: 100px;
+    max-width: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    .color-display {
+      width: 100%;
+      min-height: 20px;
+      color: transparent;
+      transition: .3s;
+      text-align: center;
+      flex: 1;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
 .panels-list {
   background-color: #DDD;
-  .panel {
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    margin: 20px;
-    .title {
-      text-align: center;
-      text-transform: uppercase;
-      color: #444;
-      font-weight: regular;
-      font-size: 1.1em;
-      padding-top: 20px;
 
-    }
-    .colors {
-      min-height: 100px;
-      max-width: 150px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      .color-display {
-        width: 100%;
-        min-height: 20px;
-        color: transparent;
-        transition: .3s;
+}
+
+#new {
+  .colors-form {
+    margin: auto;
+    padding-top: 10px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    margin-top: 40px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    .panel-color {
+      &.hidden {
+        display: none;
+      }
+      &.visible {
+        display: inline-block;
+      }
+      .panel-color-text {
+        width: 10em;
         text-align: center;
-        flex: 1;
-        &:hover {
-          color: white;
+        border-color: transparent;
+        &:focus {
+          border-color: rgba(0, 0, 0, 0.15); 
         }
       }
     }
+  }
+}
+
+#show {
+  h1 {
+    margin-bottom: 10px;
+  }
+  .action {
+    margin: 0 20px;
+    background-color: white;
+  }
+  .description {
+    margin: 0px auto 30px;
+    max-width: 600px;
+    text-align: center;
+  }
+  .panel {
+    padding: 20px;
+    box-shadow: 0 0 0 0;
+    margin-bottom: 0;
   }
 }

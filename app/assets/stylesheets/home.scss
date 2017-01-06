@@ -1,6 +1,9 @@
 #home {
-  h1 {
+  .action {
     text-align: center;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    a {
+      display: inline-block;
+    }
   }
 }

@@ -1,44 +1,25 @@
 <p id="notice"><%= notice %></p>
+<div id="show">
+  <h1><%= @panel.title%></h1>
+  <p class="description"><%= @panel.description %></p>
+  <div class="box-container">
+      <div class="panel">
+        <div class="colors">
+          <div class="color-display" style="flex:6; background-color:<%= @panel.color1 %>;"><%= @panel.color1 %></div>
+          <div class="color-display" style="flex:5; background-color:<%= @panel.color2 %>;"><%= @panel.color2 %></div>
+          <div class="color-display" style="flex:4; background-color:<%= @panel.color3 %>;"><%= @panel.color3 %></div>
+          <div class="color-display" style="flex:3; background-color:<%= @panel.color4 %>;"><%= @panel.color4 %></div>
+          <div class="color-display" style="flex:2; background-color:<%= @panel.color5 %>;"><%= @panel.color5 %></div>
+          <div class="color-display" style="flex:1; background-color:<%= @panel.color6 %>;"><%= @panel.color6 %></div>
+        </div>
+      </div>
+      <div class="action">
+        <%= link_to 'Editer', edit_panel_path(@panel), class:"button-action half" %>
+        <%= link_to 'Retour', panels_path, class:"button-action half margin-left-4" %>
+        <div class="clr"></div>
+      </div>
+  </div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @panel.title %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @panel.description %>
-</p>
 
-<p>
-  <strong>Color1:</strong>
-  <%= @panel.color1 %>
-</p>
-
-<p>
-  <strong>Color2:</strong>
-  <%= @panel.color2 %>
-</p>
-
-<p>
-  <strong>Color3:</strong>
-  <%= @panel.color3 %>
-</p>
-
-<p>
-  <strong>Color4:</strong>
-  <%= @panel.color4 %>
-</p>
-
-<p>
-  <strong>Color5:</strong>
-  <%= @panel.color5 %>
-</p>
-
-<p>
-  <strong>Color6:</strong>
-  <%= @panel.color6 %>
-</p>
-
-<%= link_to 'Edit', edit_panel_path(@panel) %> |
-<%= link_to 'Back', panels_path %>
+</div>

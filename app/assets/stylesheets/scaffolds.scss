@@ -14,6 +14,12 @@ p, ol, ul, td {
   line-height: 18px;
 }
 
+h1 {
+  text-align: center;
+  margin: 25px 0 50px 0;
+  font-size: 2em;
+}
+
 pre {
   background-color: #eee;
   padding: 10px;
@@ -94,10 +100,55 @@ label {
 
 .button-action {
   display: inline-block;
-  padding: 10px;
+  padding: 10px 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-color: #a72020;
+  background-color: #419b70;
   color: white;
   font-weight: 500;
+  border: 0;
+  letter-spacing: 2px;
+  transition: .3s;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(#419c70, 0.75);
+  }
+  &.large {
+    width: 100%;
+  }
+  &.half {
+    width: calc(50% - 2px);
+    float: left;
+  }
+}
+
+.margin-left-4 {
+  margin-left: 4px;
+}
+.clr {
+  clear: both;
+}
+
+
+.box-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 25px;
+  background-color: #eeeeee;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0, .4);
+  text-align: center;
+}
+
+.form-group {
+  text-align: left;
+  &.inline {
+    display: inline-block;
+  }
+  input[type="color"] {
+    padding: 2px 0;
+    height: 35px;
+    width: 35px;
+    margin: auto;
+    border-radius: 0;
+  }
 }
