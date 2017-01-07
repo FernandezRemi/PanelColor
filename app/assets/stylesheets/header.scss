@@ -4,9 +4,10 @@ header {
   left: 0;
   width: 100%;
   padding: 25px 0;
-  background-color: #4591bf;
-  color: white;
+  background-color: white;
+  color: black;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 999;
   h1 {
     display: inline-block;
     margin: 0 30px;
@@ -30,7 +31,7 @@ header {
         display: inline-block;
         color: #333;
         padding: 0 20px;
-        color: white;
+        color: black;
       }
     }
   }

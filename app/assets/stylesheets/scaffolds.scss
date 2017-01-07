@@ -1,11 +1,11 @@
 body {
-  background-color: #fff;
+  background-color: #eee;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  margin: 33px;
-  padding-top: 60px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 p, ol, ul, td {
@@ -104,12 +104,13 @@ label {
   text-transform: uppercase;
   letter-spacing: 2px;
   background-color: #419b70;
-  color: white;
+  color: white !important;
   font-weight: 500;
   border: 0;
   letter-spacing: 2px;
   transition: .3s;
   cursor: pointer;
+  text-decoration: none;
   &:hover {
     background-color: rgba(#419c70, 0.75);
   }
@@ -134,7 +135,7 @@ label {
   max-width: 600px;
   margin: auto;
   padding: 25px;
-  background-color: #eeeeee;
+  background-color: white;
   box-shadow: 2px 2px 5px 0px rgba(0,0,0, .4);
   text-align: center;
 }
